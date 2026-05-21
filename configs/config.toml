@@ -1,0 +1,13 @@
+learning-rate = 0.0005
+batch-size = 2  # 减小batch-size以适应显存限制
+num-epochs = 100
+num-workers = 2  # 减少数据加载线程数，避免CPU资源过度占用
+weight-decay = 0.0001
+
+log-interval = 10
+load-pretrained = true
+load-checkpoint = false
+
+load-checkpoint-path = "checkpoints/best-ckpt1.pt"
+best-checkpoint-path = "checkpoints/best-ckpt1.pt"
+last-checkpoint-path = "checkpoints/last-ckpt1.pt"
